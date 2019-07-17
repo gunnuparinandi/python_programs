@@ -32,6 +32,6 @@ def find_path(graph, start, end, path=[]):
 
 
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     # enter start and in point within the find_path method
     print(find_path(graph, 'A', 'C'))
