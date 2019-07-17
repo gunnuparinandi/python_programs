@@ -9,13 +9,15 @@
 
 # method to find contiguous sum. Method has O(n^2) runtime.
 def contiguous_sum(k, list_nums):
-    for i in range(len(list_nums)):
+    index = 0
+    for i in  list_nums:
         sum_elements = 0
-        for j in range(i, len(list_nums)):
+        for j in list_nums[index:]:
             sum_elements = sum_elements + list_nums[j]
 
             if k == sum_elements:
                 return (list_nums[i:j + 1])
+        index += 1
 
 
 if __name__ == "__main__":
